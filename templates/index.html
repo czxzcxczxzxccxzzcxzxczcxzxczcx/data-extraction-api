@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Extraction API</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .link-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #2c3e50;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .link-card:hover {
+            background: #e9ecef;
+            border-color: #667eea;
+            transform: translateY(-2px);
+        }
+        
+        .link-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .link-desc {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        
+        .status {
+            background: #d4edda;
+            color: #155724;
+            padding: 0.75rem;
+            border-radius: 6px;
+            border: 1px solid #c3e6cb;
+            margin-bottom: 1rem;
+        }
+        
+        .features {
+            text-align: left;
+            margin-top: 2rem;
+        }
+        
+        .features h3 {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        .features ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .features li:before {
+            content: "✅ ";
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Extraction API</h1>
+        <p class="subtitle">A comprehensive API for managing data extraction jobs from third-party services</p>
+        
+        <div class="status">
+            Server is running successfully!
+        </div>
+        
+        <div class="links">
+            <a href="/api/docs/" class="link-card">
+                <div class="link-title">Swagger UI</div>
+                <div class="link-desc">Interactive API documentation with try-it-out functionality</div>
+            </a>
+            
+            <a href="/api/redoc/" class="link-card">
+                <div class="link-title">ReDoc</div>
+                <div class="link-desc">Clean, responsive API documentation</div>
+            </a>
+            
+            <a href="/api/schema/" class="link-card">
+                <div class="link-title">OpenAPI Schema</div>
+                <div class="link-desc">Raw OpenAPI 3.0 schema (JSON/YAML)</div>
+            </a>
+            
+            <a href="/api/v1/health/" class="link-card">
+                <div class="link-title">Health Check</div>
+                <div class="link-desc">API health status endpoint</div>
+            </a>
+            
+            <a href="/api/v1/jobs/statistics/" class="link-card">
+                <div class="link-title">Statistics</div>
+                <div class="link-desc">View job statistics and metrics</div>
+            </a>
+            
+            <a href="/admin/" class="link-card">
+                <div class="link-title">Django Admin</div>
+                <div class="link-desc">Administrative interface</div>
+            </a>
+        </div>
+        
+        <!-- <div class="features">
+            <h3>🚀 Key Features</h3>
+            <ul>
+                <li>Asynchronous data extraction with job status tracking</li>
+                <li>Comprehensive REST API with OpenAPI 3.0 documentation</li>
+                <li>Pagination support for large datasets</li>
+                <li>Job management (start, cancel, remove)</li>
+                <li>Real-time statistics and health monitoring</li>
+                <li>Robust error handling and validation</li>
+                <li>Comprehensive test suite (25+ test cases)</li>
+                <li>Interactive Swagger UI for API exploration</li>
+            </ul>
+        </div> -->
+    </div>
+</body>
+</html>
